@@ -51,14 +51,6 @@ fun MyApp(modifier: Modifier = Modifier) {
     }
 }
 
-@Preview
-@Composable
-fun MyAppPreview() {
-    BasicsCodelabTheme {
-        MyApp(Modifier.fillMaxSize())
-    }
-}
-
 @Composable
 fun Greetings(
     modifier: Modifier = Modifier,
@@ -98,14 +90,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     }
 }
 
-@Preview(showBackground = true, widthDp = 320)
-@Composable
-fun GreetingsPreview() {
-    BasicsCodelabTheme {
-        Greetings()
-    }
-}
-
 @Composable
 fun OnboardingScreen(
     onContinueClicked: () -> Unit,
@@ -123,6 +107,22 @@ fun OnboardingScreen(
         ) {
             Text("Continue")
         }
+    }
+}
+
+@Preview
+@Composable
+fun MyAppPreview() {
+    BasicsCodelabTheme {
+        MyApp(Modifier.fillMaxSize())
+    }
+}
+
+@Preview(showBackground = true, widthDp = 320)
+@Composable
+fun GreetingsPreview() {
+    BasicsCodelabTheme {
+        Greetings()
     }
 }
 
